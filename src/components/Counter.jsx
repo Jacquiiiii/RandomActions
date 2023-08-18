@@ -24,7 +24,7 @@ const CounterButtonContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-top: 4em;
-  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: #62929a;
   border-radius: 0.25em;
   box-shadow: ${boxShadow};
   width: 50vw;

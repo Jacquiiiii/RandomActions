@@ -32,7 +32,7 @@ const GenerateContainer = styled.div`
     color: whitesmoke;
     border-radius: 0.25em;
     padding: 1em 2em;
-    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background: #5c5757;
     box-shadow: ${boxShadow};
   }
 `
@@ -43,7 +43,7 @@ const ResultsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #dcdcdc;
+  background-color: #62929a;
   border-radius: 0.25em;
   color: black;
   margin-top: 2em;
@@ -55,7 +55,7 @@ const ResultsContainer = styled.div`
     color: whitesmoke;
     border-radius: 0.25em;
     padding: 1em 2em;
-    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background: #5c5757;
     box-shadow: ${boxShadow};
     font-size: 16px;
     margin: 2em;

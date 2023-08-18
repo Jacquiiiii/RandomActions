@@ -32,7 +32,7 @@ const MemeButton = styled.div`
   color: whitesmoke;
   border-radius: 0.25em;
   padding: 1em 2em;
-  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: #62929a;
   box-shadow: ${boxShadow};
 `
 

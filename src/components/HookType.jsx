@@ -18,7 +18,7 @@ const TrueHookBubble = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at 6.4% 9.8%, rgb(88, 242, 174) 0%, rgb(0, 130, 240) 97.9%);
+    background: #5c5757;
     padding: 0.25em;
     font-size: 15px;
     color: black;
@@ -50,7 +50,7 @@ const FalseHookBubble = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #dcdcdc;
+    background-color: #5c5757;
     padding: 0.25em;
     font-size: 15px;
     color: black;

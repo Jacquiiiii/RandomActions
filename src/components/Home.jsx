@@ -12,7 +12,7 @@ const HomeContainer = styled.div`
   align-items: center;
   justify-content: center;
   h2 {
-    font-size: 5em;
+    font-size: 7em;
     margin-top: 1em;
     color: whitesmoke;
   }
