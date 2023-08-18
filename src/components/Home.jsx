@@ -11,19 +11,18 @@ const HomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  img {
+  h2 {
+    font-size: 5em;
     margin-top: 1em;
-    border-radius: 50%;
-    height: 80vh;
-    width: auto;
+    color: whitesmoke;
   }
 `
 
 const Home = () => {
   return (
     <HomeContainer>
-      <Nav></Nav>
-      <img src="https://www.sciencenews.org/wp-content/uploads/2021/02/022421_mt_number-generator_feat-1030x580.jpg" alt="dice"/>
+      <Nav />
+      <h2>Random Actions</h2>
     </HomeContainer>
   )
 }
