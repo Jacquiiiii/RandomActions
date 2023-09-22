@@ -34,7 +34,7 @@ const SubmitContainer = styled.div`
     padding: 1em;
     box-shadow: ${boxShadow};
     margin-right: 1em;
-    background-color: #dcdcdc;
+    background-color: #ececec;
   }
   button {
     width: 150px;
@@ -47,16 +47,12 @@ const TodoItem = styled.div`
   justify-content: space-between;
   span {
     margin-right: 1em;
-    padding: 0.75em;
-    background-color: #dcdcdc;
+    padding: 1em;
+    background-color: #ececec;
     width: 40vw;
     border-radius: 0.25em;
     box-shadow: ${boxShadow};
     color: black;
-  }
-  button {
-    border-radius: 50%;
-    background: radial-gradient(circle at 50.4% 50.5%, rgb(251, 32, 86) 0%, rgb(135, 2, 35) 90%);
   }
 `
 
@@ -67,8 +63,8 @@ const Button = styled.button`
   font-family: ${font};
   color: whitesmoke;
   border-radius: 0.25em;
-  padding: 1em 2em;
-  background: #5c5757;
+  padding: 1em 1.5em;
+  background: #385170;
   box-shadow: ${boxShadow};
   font-size: 16px;
 `
@@ -122,7 +118,7 @@ const Todo = () => {
       {todos.map((todo) => (
         <TodoItem key={todo.id}>
           <span>{todo.task}</span>
-          <Button onClick={() => dispatch({ type: "delete", payload: { id: todo.id } })}>Delete</Button>
+          <Button onClick={() => dispatch({ type: "delete", payload: { id: todo.id } })}>🗑️</Button>
         </TodoItem>
       ))}
     </TodoContainer>

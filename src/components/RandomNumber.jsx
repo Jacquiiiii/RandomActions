@@ -32,7 +32,7 @@ const GenerateContainer = styled.div`
     color: whitesmoke;
     border-radius: 0.25em;
     padding: 1em 2em;
-    background: #5c5757;
+    background: #385170;
     box-shadow: ${boxShadow};
   }
 `
@@ -43,10 +43,11 @@ const ResultsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #62929a;
+  background-color: #ececec;
   border-radius: 0.25em;
   color: black;
   margin-top: 2em;
+  box-shadow: ${boxShadow};
   button {
     font-weight: bold;
     border: none;
@@ -55,7 +56,7 @@ const ResultsContainer = styled.div`
     color: whitesmoke;
     border-radius: 0.25em;
     padding: 1em 2em;
-    background: #5c5757;
+    background: #385170;
     box-shadow: ${boxShadow};
     font-size: 16px;
     margin: 2em;

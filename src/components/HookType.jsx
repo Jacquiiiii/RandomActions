@@ -13,18 +13,19 @@ const TrueHookBubble = styled.div`
   font: ${font};
   position: relative;
   cursor: pointer;
+  z-index: 1;
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #5c5757;
+    background: #385170;
     padding: 0.25em;
     font-size: 15px;
-    color: black;
+    color: whitesmoke;
     width: 125px;
     height: 125px;
-    border-radius: 0.25em; 
+    border-radius: 50%; 
     margin: 0.25em 1em;
     text-align: center;
     box-shadow: ${boxShadow};
@@ -45,15 +46,16 @@ const FalseHookBubble = styled.div`
   font: ${font};
   position: relative;
   cursor: pointer;
+  z-index: 1;
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #5c5757;
+    background-color: #385170;
     padding: 0.25em;
     font-size: 15px;
-    color: black;
+    color: whitesmoke;
     width: 75px;
     height: 75px;
     border-radius: 50%; 
