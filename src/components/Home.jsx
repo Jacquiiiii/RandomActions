@@ -58,7 +58,6 @@ const Home = () => {
         <img
           key={index}
           src={imageUrl}
-          alt={`Image ${index}`}
         />
       ))}
       </ImagesContainer>
