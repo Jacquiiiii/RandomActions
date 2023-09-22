@@ -24,7 +24,7 @@ const CounterButtonContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-top: 4em;
-  background: #62929a;
+  background: #385170;
   border-radius: 0.25em;
   box-shadow: ${boxShadow};
   width: 50vw;
@@ -42,7 +42,6 @@ const CounterButtonContainer = styled.div`
     color: white;
   };
   button:hover {
-    color: #00D9D9;
     text-shadow: 1px 1px 1px #000;
   };
   p {
