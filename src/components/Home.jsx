@@ -42,7 +42,7 @@ const Home = () => {
         <img
           key={index}
           src={imageUrl}
-          alt="random picture"
+          alt="random"
         />
       ))}
       </ImagesContainer>

@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useCallback } from "react"
+import React, { useState, useReducer, useCallback, useEffect } from "react"
 import styled from 'styled-components'
 import { boxShadow, font } from '../constants/constants'
 
@@ -78,7 +78,14 @@ const reducer = (todos, action) => {
 
 const Todo = () => {
   const [task, setTask] = useState("")
-  const [todos, dispatch] = useReducer(reducer, [])
+  const [todos, dispatch] = useReducer(reducer, [], () => {
+    const storedTodos = localStorage.getItem("todos")
+    return storedTodos ? JSON.parse(storedTodos) : []
+  })
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos))
+  }, [todos])
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault()
