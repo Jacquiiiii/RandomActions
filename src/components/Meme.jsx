@@ -1,16 +1,11 @@
-// External imports
 import React, { useState } from "react"
 import axios from 'axios'
 import styled from 'styled-components'
+import { boxShadow, font } from '../constants/constants'
 
-// Componenents
 import MemeImageContainer from './MemeImageContainer'
 import Nav from "./Nav"
 
-// Styles
-import { boxShadow, font } from '../constants/constants'
-
-// Styled components
 const MemeContainer = styled.div`
   padding: 0.25em;
   display: flex;

@@ -1,21 +1,15 @@
-// External imports
 import React, { useContext } from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-
-// Context
 import { ThemeContext } from '../providers/ThemeProvider'
-
-// Styles
 import './styles/styles.css'
 
-// Components
 import Home from './Home'
 import Counter from './Counter'
 import Meme from './Meme'
 import Todo from './Todo'
 import RandomNumber from './RandomNumber'
 
-function App() {
+const App = () => {
   const { theme } = useContext(ThemeContext)
 
   return (

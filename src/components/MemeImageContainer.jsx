@@ -1,14 +1,9 @@
-// External imports
 import React from "react"
 import styled from 'styled-components'
-
-// Styles
 import { boxShadow, font } from '../constants/constants'
 
-// Styled components
 const MemeContainer = styled.div`
   margin: 1.5em;
-  ${'' /* font-size: 1em; */}
   border-radius: 0.25em;
   border: none;
   cursor: pointer;

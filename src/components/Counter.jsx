@@ -1,14 +1,9 @@
-// External imports
 import React, { useState } from "react"
 import styled from 'styled-components'
-
-// Components
-import Nav from "./Nav"
-
-// Styles
 import { boxShadow, font } from '../constants/constants'
 
-// Styled components
+import Nav from "./Nav"
+
 const CounterContainer = styled.div`
   display: flex;
   flex-direction: column;
