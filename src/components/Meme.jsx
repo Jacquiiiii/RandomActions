@@ -29,6 +29,7 @@ const MemeButton = styled.div`
 
 const Meme = () => {
   const [meme, setMeme] = useState("")
+  const [apiError, setApiError] = useState(false)
 
   const generateMeme = () => {
     axios.get('https://api.imgflip.com/get_memes')
@@ -36,8 +37,12 @@ const Meme = () => {
         const memeList = response.data.data.memes
         const randomNumber = Math.floor(Math.random() * 101)
         setMeme(memeList[randomNumber].url)
+        console.log(response.data)
       })
-      .catch(error => console.error)
+      .catch(error => {
+        console.log('error!', error)
+        setApiError(true)
+      })
   }
 
   return (
@@ -45,7 +50,8 @@ const Meme = () => {
       <Nav />
       <MemeContainer>
         <MemeButton onClick={ generateMeme }>Click here!</MemeButton>
-        { meme !== '' && <MemeImageContainer memeImg={meme}/> }
+        { (meme && meme !== '') && <MemeImageContainer memeImg={meme}/> }
+        { apiError && <div>Error: API request failed</div> }
       </MemeContainer>
     </>
   )

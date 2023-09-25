@@ -60,7 +60,7 @@ const Nav = () => {
   return (
     <NavBar>
       <Heading>
-        <button onClick={handleThemeChange}>💡</button>
+        <button onClick={handleThemeChange} data-testid="lightbulb">💡</button>
         <Link className="link" to="/" ><span>Random Actions</span></Link>
       </Heading>
       <LinkContainer>

@@ -13,7 +13,7 @@ const App = () => {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <div className={`App-${theme}`}>
+    <div className={`App-${theme}`} data-testid="app-container">
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
