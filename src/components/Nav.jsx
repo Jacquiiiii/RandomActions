@@ -68,6 +68,7 @@ const Nav = () => {
         <button><Link className="link" to="/Meme" >Meme Generator</Link></button>
         <button><Link className="link" to="/Todo" >To-do List</Link></button>
         <button><Link className="link" to="/RandomNumber" >Random Number Generator</Link></button>
+        <button><Link className="link" to="/ScrollTest" >Scroll Test</Link></button>
       </LinkContainer>
     </NavBar>
   )

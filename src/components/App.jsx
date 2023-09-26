@@ -8,6 +8,7 @@ import Counter from './Counter'
 import Meme from './Meme'
 import Todo from './Todo'
 import RandomNumber from './RandomNumber'
+import ScrollTest from './ScrollTest'
 
 const App = () => {
   const { theme } = useContext(ThemeContext)
@@ -21,6 +22,7 @@ const App = () => {
           <Route exact path="/Meme" element={<Meme />} />
           <Route exact path="/Todo" element={<Todo />} />
           <Route exact path="/RandomNumber" element={<RandomNumber />} />
+          <Route exact path="/ScrollTest" element={<ScrollTest />} />
         </Routes>
       </BrowserRouter>
     </div>
