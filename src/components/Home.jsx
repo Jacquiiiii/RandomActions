@@ -20,6 +20,9 @@ const HomeContainer = styled.div`
     border-radius: 0.25em;
     box-shadow: ${boxShadow}
   }
+  span {
+    margin-bottom: 1em;
+  }
 `
 
 const ImagesContainer = styled.div`
@@ -46,6 +49,7 @@ const Home = () => {
         />
       ))}
       </ImagesContainer>
+      <span>This app was created for development practice</span>
     </HomeContainer>
   )
 }
